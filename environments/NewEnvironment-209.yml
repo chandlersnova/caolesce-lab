@@ -1,0 +1,17 @@
+fileVersion: 1
+id: "209"
+mappingDefinitions:
+  CUSTOMER:
+    database: CHANDLER_FROSTBYTE_TASTY_BYTES
+    schema: RAW_CUSTOMER
+  POS:
+    database: CHANDLER_FROSTBYTE_TASTY_BYTES
+    schema: RAW_POS
+  SAMPLE:
+    database: COALESCE_SAMPLE_DATABASE
+    schema: TPCH_SF001
+  WORK:
+    database: CHANDLER_DB
+    schema: CHANDLER_SCHEMA
+name: New Environment
+type: Environment

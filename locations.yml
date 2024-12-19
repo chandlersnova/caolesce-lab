@@ -1,3 +1,7 @@
-defaultStorageMapping: null
+defaultStorageMapping: WORK
 fileVersion: 1
-locations: []
+locations:
+  - CUSTOMER
+  - POS
+  - SAMPLE
+  - WORK

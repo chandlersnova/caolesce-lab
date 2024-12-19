@@ -1,0 +1,215 @@
+fileVersion: 1
+id: 72dee950-d86a-4010-bf48-cc8c0f67364e
+name: V_ORDER_ITEMS
+operation:
+  config:
+    insertStrategy: UNION
+    selectDistinct: false
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: WORK
+  materializationType: view
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6394f2d5-5ce8-4ca6-b232-9e006f1262be
+          stepCounter: 72dee950-d86a-4010-bf48-cc8c0f67364e
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ORDER_DETAIL_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0c0bd02e-9dfc-4bcf-897b-71587be0ae1c
+                stepCounter: f4a80f14-af14-44df-9c78-e015bb632ffb
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 42b4e07c-758d-4adc-9fda-0ac2c00d727a
+          stepCounter: 72dee950-d86a-4010-bf48-cc8c0f67364e
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ORDER_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 149495f1-1c8c-4329-829b-4280db3151ab
+                stepCounter: f4a80f14-af14-44df-9c78-e015bb632ffb
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 647818d6-e2ce-417e-90e8-156b7dffa930
+          stepCounter: 72dee950-d86a-4010-bf48-cc8c0f67364e
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: MENU_ITEM_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2e3549b7-6fec-486e-a26a-70f85cb05daf
+                stepCounter: 0c8c649c-deaf-4725-9b2e-21e9126a6199
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 53ce8e8b-b53a-4557-be42-52ef1d0b0b8f
+          stepCounter: 72dee950-d86a-4010-bf48-cc8c0f67364e
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: ITEM_CATEGORY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c16b2d6d-38df-4658-9ec5-8a059499b3a8
+                stepCounter: 0c8c649c-deaf-4725-9b2e-21e9126a6199
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 80f6c6c1-75fb-4e89-87e1-7aac5b4634cc
+          stepCounter: 72dee950-d86a-4010-bf48-cc8c0f67364e
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: ITEM_SUBCATEGORY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a5861874-119b-4766-acfe-0194096dd89b
+                stepCounter: 0c8c649c-deaf-4725-9b2e-21e9126a6199
+            transform: ""
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2672e831-4198-43ca-99be-d5f2e0f181b3
+          stepCounter: 72dee950-d86a-4010-bf48-cc8c0f67364e
+        config: {}
+        dataType: STRING
+        description: ""
+        name: ingredients
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d59fa803-0351-4826-afd5-bede727183de
+                stepCounter: 0c8c649c-deaf-4725-9b2e-21e9126a6199
+            transform: ""
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ebdb97d4-5319-4e5c-ab6c-6a8fc65a862a
+          stepCounter: 72dee950-d86a-4010-bf48-cc8c0f67364e
+        config: {}
+        dataType: STRING
+        description: ""
+        name: is_dairy_free_flag
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b9d0ec0f-9718-400d-9910-5a9d08b6aa1f
+                stepCounter: 0c8c649c-deaf-4725-9b2e-21e9126a6199
+            transform: ""
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9c620e94-5661-4c12-800f-337ea0783d56
+          stepCounter: 72dee950-d86a-4010-bf48-cc8c0f67364e
+        config: {}
+        dataType: STRING
+        description: ""
+        name: is_gluten_free_flag
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d5116a79-547b-46e7-b549-9a74981edcde
+                stepCounter: 0c8c649c-deaf-4725-9b2e-21e9126a6199
+            transform: ""
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3904ee57-9665-45d5-8113-3b11f64c9068
+          stepCounter: 72dee950-d86a-4010-bf48-cc8c0f67364e
+        config: {}
+        dataType: STRING
+        description: ""
+        name: is_healthy_flag
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bd572e39-77ed-485f-8796-805a691629ec
+                stepCounter: 0c8c649c-deaf-4725-9b2e-21e9126a6199
+            transform: ""
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 28bbd0db-5f81-4c0f-acf2-eb74769b7755
+          stepCounter: 72dee950-d86a-4010-bf48-cc8c0f67364e
+        config: {}
+        dataType: STRING
+        description: ""
+        name: is_nut_free_flag
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 576ee3e4-45b4-4e29-8fd3-7a42a6d57bdf
+                stepCounter: 0c8c649c-deaf-4725-9b2e-21e9126a6199
+            transform: ""
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: bc421625-c221-457b-b45d-004c7f97c908
+          stepCounter: 72dee950-d86a-4010-bf48-cc8c0f67364e
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: menu_item_id
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4916e338-0b69-4dba-a455-e4def40f890a
+                stepCounter: 0c8c649c-deaf-4725-9b2e-21e9126a6199
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          DIM_MENU: 0c8c649c-deaf-4725-9b2e-21e9126a6199
+          FCT_ORDER_DETAIL: f4a80f14-af14-44df-9c78-e015bb632ffb
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: WORK
+            nodeName: DIM_MENU
+          - locationName: WORK
+            nodeName: FCT_ORDER_DETAIL
+        join:
+          joinCondition: |-
+            FROM {{ ref('WORK', 'FCT_ORDER_DETAIL') }} "FCT_ORDER_DETAIL"
+            LEFT JOIN {{ ref('WORK', 'DIM_MENU') }} "DIM_MENU"
+            ON "FCT_ORDER_DETAIL"."MENU_ITEM_ID" = "DIM_MENU"."MENU_ITEM_ID"
+        name: V_ORDER_ITEMS
+        noLinkRefs: []
+  name: V_ORDER_ITEMS
+  overrideSQL: false
+  schema: ""
+  sqlType: View
+  type: sql
+  version: 1
+type: Node
